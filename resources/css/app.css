@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-shape{
+    clip-path: polygon(26% 40%, 44% 0, 100% 0, 100% 100%, 40% 100%, 0 100%);
+}
+.custom-shape-left{
+    clip-path: polygon(0 0, 57% 0, 100% 100%, 0% 100%);
+
+
+}
+@keyframes fadeUpRight {
+    from {
+        opacity: 0;
+        transform: translate(50px, 30px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes fadeUpLeft {
+    from {
+        opacity: 0;
+        transform: translate(-50px, 30px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.animate-fade-up-right {
+    animation: fadeUpRight 1s ease-out forwards;
+}
+
+.animate-fade-up-left {
+    animation: fadeUpLeft 1s ease-out forwards;
+}
+
+html, body {
+    overflow-x: hidden;
+}
